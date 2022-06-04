@@ -17,7 +17,7 @@ const EightBall = answers => {
   return (
     <div>
       <div className={`eightBall ${color}`} onClick={shake}>
-        <div>{answer}</div>
+        <div className="center">{answer}</div>
       </div>
       <button onClick={reset}>Reset</button>
     </div>

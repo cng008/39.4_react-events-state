@@ -3,7 +3,7 @@ import EightBall from './EightBall';
 
 const App = () => (
   <>
-    <h1>8-Ball</h1>
+    <h1>Magic 8-Ball</h1>
     <EightBall />
   </>
 );
