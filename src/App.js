@@ -1,6 +1,11 @@
 import React from 'react';
-import './App.css';
+import EightBall from './EightBall';
 
-const App = () => {};
+const App = () => (
+  <>
+    <h1>8-Ball</h1>
+    <EightBall />
+  </>
+);
 
 export default App;
