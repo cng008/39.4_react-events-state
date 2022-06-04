@@ -31,3 +31,8 @@
 .red {
   background: radial-gradient(circle at 100px 100px, red, rgb(131, 0, 0));
 }
+
+button {
+  display: block;
+  margin: 10px auto;
+}

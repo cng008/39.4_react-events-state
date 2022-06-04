@@ -3,6 +3,10 @@ import getRandomAnswer from './getRandomAnswer';
 import './EightBall.css';
 
 const EightBall = answers => {
+  const reset = () => {
+    setAnswer('Think of a Question');
+    setColor('black');
+  };
   const shake = () => {
     setAnswer(getRandomAnswer().msg);
     setColor(getRandomAnswer().color);
@@ -11,8 +15,11 @@ const EightBall = answers => {
   const [color, setColor] = useState('black');
 
   return (
-    <div className={`eightBall ${color}`} onClick={shake}>
-      <div>{answer}</div>
+    <div>
+      <div className={`eightBall ${color}`} onClick={shake}>
+        <div>{answer}</div>
+      </div>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 };
